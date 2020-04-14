@@ -1,0 +1,149 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container .shadow{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 20px 20px;
+    background-color: #fff;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(221, 143, 143, 0.3);
+}
+.container .shadow.shadow1{
+    box-shadow: 30px 30px 30px rgba(0,0,0,0.3);
+}
+
+.container .shadow.shadow2::before{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left:5%;
+    width:95%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.3);
+    transform-origin: left;
+    transform:skewy(6deg);
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.container .shadow.shadow3::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left:0;
+    width:50%;
+    height: 15px;
+    background-color: rgba(0,0,0,0.3);
+    transform-origin: right;
+    transform: skewY(-8deg);
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.container .shadow.shadow3::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left:5%;
+    width:95%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.3);
+    transform-origin: left;
+    transform:skewy(8deg);
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.container .shadow.shadow4::before{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left:5%;
+    width:90%;
+    height: 10px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 80%;
+    z-index:-1;
+    filter: blur(5px);
+}
+
+.container .shadow.shadow5::before{
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    left:5%;
+    width:90%;
+    height: 90%;
+    background-color: rgba(0,0,0,0.3);
+
+    z-index:-1;
+    filter: blur(10px);
+}
+
+.container .shadow.shadow6{
+    background-color: aqua;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgb(250, 248, 248),
+                15px 15px 15px rgba(54, 25, 25, 0.3);
+}
+
+.container .shadow.shadow7{
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: -15px -15px 20px rgba(250, 248, 248,0.2),
+    15px -15px 20px rgba(250, 248, 248,0.2),
+    -15px 15px 20px rgba(0, 0, 0,0.1),
+    15px 15px 20px rgba(0, 0, 0,0.1),
+    inset -5px -5px 5px rgba(250, 248, 248,0.2),
+    inset 5px 5px 5px rgba(0, 0, 0,0.1);
+    
+}
+
+.container .shadow.shadow8{
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: -15px -15px 20px rgba(54, 25, 25, 0.3),
+    15px -15px 20px rgba(54, 25, 25, 0.3),
+    -15px 15px 20px rgba(54, 25, 25, 0.3),
+    15px 15px 20px rgba(54, 25, 25, 0.3);
+    
+}
+
+.container .shadow.shadow8{
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: -15px -15px 20px rgba(54, 25, 25, 0.3),
+    15px -15px 20px rgba(54, 25, 25, 0.3),
+    -15px 15px 20px rgba(54, 25, 25, 0.3),
+    15px 15px 20px rgba(54, 25, 25, 0.3);
+}
+.container .shadow.shadow9{
+    background-color: aqua;
+    border-radius: 15px;
+    box-shadow: -5px -5px 15px rgb(88, 194, 212),
+                5px 5px 15px rgba(54, 25, 25, 0.3),
+                inset -5px -5px 15px rgba(54, 25, 25, 0.3),
+                inset 5px 5px 15px rgba(54, 25, 25, 0.3);
+}
