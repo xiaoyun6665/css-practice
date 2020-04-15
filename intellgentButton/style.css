@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    position: fixed;
+    height: 100px;
+    width: 200px;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -15px;
+    background-color: orange;
+    color:white;
+    box-shadow: 15px 15px 7px rgba(200, 200, 200, 0.4);
+    text-align: center;
+}
+
+.btn:hover{
+    cursor: pointer;
+    animation: cute 0.3s ease 0s 2;
+    transition: all 0.5s;
+}
+
+@keyframes cute {
+    0%,
+    100%{
+        transform: scale(1,1);
+        background-color: orange;
+    }
+    25%,
+    75% {
+        transform: scale(1.2,0.8);
+        background-color: orangered;
+    }
+
+    50%{
+        transform: scale(0.8，1.2);
+        background-color: red;
+    }
+}
